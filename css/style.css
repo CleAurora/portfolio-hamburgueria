@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Janda Manatee Solid', 'Londrina Solid', cursive;
+}
+
+h1 {
+    display: none;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:#ff9933;
+    font-size: 1.3em;
+    height: 2.5em;
+    align-items: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color:#361a0c;
+    font-weight: bold;
+    padding: 0.65em 3em;
+}
+
+nav a:hover {/*para alterar letra quando passa o mouse*/
+    background-color: #c27629;
+    color:#fff;
+}
+
+#logo_area{
+    background-image: url(../img/fundo_logo.jpg); /*ponto ponto - pedindo permissão para a pasta pai*/
+    background-repeat: no-repeat;/*para a imagem não continunar repetindo*/
+    background-position: center;/*para a foto ficar no centro*/
+    background-size: cover;/*para o tamanho da foto expandir, ocupando toda a altura cedida*/
+    text-align: center;/* o texto e a imagem para o centro - herança do html para ter ido os dois*/
+    padding: 1em;/*para dar uma distância vertical - alinhar vertical*/ 
+}
+
+#logo_area h2{
+    color:#ff9933;
+    text-shadow: -2px -2px 0 #361a0c,
+                  2px -2px 0 #361a0c,
+                 -2px  2px 0 #361a0c,
+                  2px  2px 0 #361a0c;/*não há tracejado no html - tentativa de gambiarra*/
+}
+
+#banner{/*início do banner*/
+    background-color: #000;
+    display: flex;/*vc está falando para o html que vc vai empilhar esse html, não é para seguir o padrão*/
+    color: #fff; /*Cor da fonte*/
+    justify-content: space-between; /*figura foi para o canto direito*/
+}
+
+#banner p {
+    font-size: 2em;
+    font-weight: bold; /*só mexendo na fonte*/
+}
+
+#banner img{
+    margin: 10px 0 10px 0; /*margem para cima e baixo*/
+}
+
+.banner_destaque{/*determinando fonte dos strongs, chamando a classe*/
+    font-size:4em;
+    font-family: 'Janda Manatee Solid', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a70000;
+    -webkit-text-stroke: 4px #ffcc00; /*outro tipo de tracejado pra dentro e pra fora*/
+}
+
+#hamburgueres{/*Cor de fundo*/
+    background-color: #361a0c;
+    padding: 2em;
+}
+
+#hamburgueres h2{/*configuração escrita - parecido com o de cima*/
+    color:#ff9933;
+    text-shadow: -2px -2px 0 #a70000,
+                  2px -2px 0 #a70000,
+                 -2px  2px 0 #a70000,
+                  2px  2px 0 #a70000;/*não há tracejado no html - tentativa de gambiarra*/
+}
+
+section{
+    text-align: center; /*fotos no centro, mas ainda uma embaixo da outra*/
+}
+
+.flex-grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #a70000;
+    text-shadow: -2px -2px 0 #ff9933,
+    2px -2px 0 #ff9933,
+    -2px  2px 0 #ff9933,
+    2px  2px 0 #ff9933;/*não há tracejado no html - tentativa de gambiarra*/
+    font-family: 'Janda Manatee Solid', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2em;
+}
+
+.flex-grupo > div {
+    background-color: #c27629;
+}
+
+.flex-grupo > div > p{
+    height: 1.5em;
+}
+
+.flex-grupo > div > p:nth-child(odd){
+    font-weight: bold;
+    font-size:2.5em;
+}
+
+.flex-grupo > div > p:nth-child(even){
+    font-weight: bold;
+    font-size: 5em;
+    margin-top: -0.5em;
+    text-shadow: -3px -3px 0 #ff9933,
+                  3px -3px 0 #ff9933,
+                 -3px  3px 0 #ff9933,
+                  3px  3px 0 #ff9933;
+}
+
+#shakes{/*Cor de fundo*/
+    background-color: #fff;
+    padding: 2em;
+}
+
+#shakes h2{/*configuração escrita - parecido com o de cima*/
+    color:#a70000;
+    text-shadow: -2px -2px 0 #ff9933,
+                  2px -2px 0 #ff9933,
+                 -2px  2px 0 #ff9933,
+                  2px  2px 0 #ff9933;/*não há tracejado no html - tentativa de gambiarra*/
+}
+
+#historia{
+    background-color: #a70000;
+    padding: 10px;
+}
+
+#historia h2{
+    color: #361a0c;
+    text-shadow: -2px -2px 0 #ff9933,
+                  2px -2px 0 #ff9933,
+                 -2px  2px 0 #ff9933,
+                  2px  2px 0 #ff9933;
+    text-align: left;
+    font-weight: bold;
+    font-size: 200%;
+    
+}
+
+#historia p{
+    display: flex;
+    text-align: left;
+    float: left;
+    margin-top: -3em;
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: 150%;
+    
+}
+
+footer{
+    background: #c27629;
+    text-align: center;
+    color: #a70000;
+    padding: 10px;
+    
+}
+
+address{
+    font-weight: normal;
+    font-style: normal;
+}
+
+.meulink:hover {/*para alterar letra quando passa o mouse*/
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+}
+
+

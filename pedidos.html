@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>McBonald's</title>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style-pedidos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="index.html#hamburgueres">Hamburgueres</a></li>
+                <li><a href="index.html#shakes">Shakes</a></li>
+                <li><a href="index.html#historia">História</a></li>
+                <li><a href="index.html#local">Local</a></li>
+                <li><a href="pedidos.html">Peça já!</a></li>
+            </ul>
+        </nav>
+        <hgroup>
+            <h1>McBonald's</h1>
+            <h2>Pede aí, jovem!</h2>
+        </hgroup>
+    </header>
+    <main>
+        <form method="GET" action="index.html"><!--get: manda informações e recebe; post voce manda as informações, não necessariamente recebe. Estou direcionando para a página do index-->
+            <label for="nome">Nome Completo: </label>
+            <br />
+            <input name="nome" id="nome" type="text" maxlength="50" minlength="3" placeholder="Digite seu nome completo aqui" />
+            <br />
+
+            <label for="endereco">Endereço: </label>
+            <br />
+            <input name="endereco" id="endereco" type="text" maxlength="50" minlength="3" placeholder="Digite seu endereço residencial aqui" required />
+            <br />
+
+            <label for="telefone">Telefone para contato: </label>
+            <br />
+            <input name="telefone" id="telefone" type="tel" placeholder="Digite seu telefone aqui" required/>
+            <br />
+
+            <label for="email">E-mail para promoções: </label>
+            <br />
+            <input name="email" id="email" type="email" placeholder="Digite seu e-mail aqui" required />
+            <br />
+
+            <div>
+                <label for="hamburger">Hamburger</label>
+                <br />
+                <select name="hamburger" id="hamburger" required> <!--required- torna o campo obrigatório-->
+                    <option value=""disabled selected>Selecione:</option><!--disabled= desabilitado - não é uma opção-->
+                    <option value="black_burger">BlackBurger</option>
+                    <option value="furioso">Furioso</option>
+                    <option value="tsukaburger">Tsukaburger</option>
+                    <option value="vegburger">Vegburger</option>
+                </select>
+            </div>
+
+            <div>
+
+                <label for="shake">Shake</label>
+                <br />
+                <select name="shake" id="shake" required>
+                    <option value="" disabled selected>Selecione:</option>
+                    <option value="biscoito">Biscoito</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="morango">Morango</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Finalizar Pedido" /><!--submit seria enviar, é uma forma específica de enviar-->
+
+        </form>
+    </main>
+    <footer id="rodape">
+        <address>
+            Avenida Barão de Limeira, 539 - Campos Elíseos - SP
+            <br />
+            mcbonalds@email.com
+            <br />
+            11 1234 6789
+        </address>
+        <br>
+            <a href="#" class="meulink">Voltar para o topo!</a>
+
+    </footer>
+</body>
+</html>

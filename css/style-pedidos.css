@@ -1,0 +1,54 @@
+html{
+    height: 100%; /*definindo no html a altura de 100%*/
+}
+
+body{
+    background-color: #361a0c;
+    text-align: center;
+    height: 100%; /*decidi pegar 100% da tela*/
+}
+
+h2{
+    padding: 30px;
+    color: #a70000;
+    text-shadow: -1px -1px 0 #ff9933,
+                  1px -1px 0 #ff9933,
+                 -1px  1px 0 #ff9933,
+                  1px  1px 0 #ff9933;
+}
+
+main{
+    height: calc(100% - 265px); /*ferramenta de cálculo, decidi que 100% da tela é 180px, o tamanho da minha tela agora*/
+}
+
+form{
+    margin: 0 auto;
+    width: 30%;
+    text-align: left;
+
+}
+
+label{
+    color: #ff9933;
+    font-weight: bold;
+    text-shadow: -1px -1px 0  #a70000,
+                  1px -1px 0  #a70000,
+                 -1px  1px 0  #a70000,
+                  1px  1px 0  #a70000;
+    font-family: 'Janda Manatee Solid', 'Londrina Solid', cursive;
+}
+
+input, select{
+    width: 100%;
+    height: 25px;
+    border: none;
+}
+
+form *{/*asterisco pega tudo, todas as tags do form*/
+    margin: 5px 0;
+}
+
+form > div{ /*criei uma div para o html*/
+    display: inline-block; /*para colocar os dois na mesma linha*/
+    width: 49.5%; /*colocando o meu espaço, do hamb e do shake pra dar certinho*/
+}
